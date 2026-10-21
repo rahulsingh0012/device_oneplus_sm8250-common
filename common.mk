@@ -142,6 +142,9 @@ PRODUCT_PACKAGES += \
     OplusDoze \
     OplusDozeResCommon
 
+# Inherit from the OnePlus Camera makefile.
+$(call inherit-product, vendor/oneplus/camera/camera-vendor.mk)
+
 # Dolby
 $(call inherit-product, hardware/oplus/dolby/dolby.mk)
 
